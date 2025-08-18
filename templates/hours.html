@@ -1,11 +1,568 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <p>Hours Content</p>
-</body>
+    <script src="./js/tailwind.js"></script>
+  </head>
+  <body class="grid grid-cols-2">
+    <!-- entries list-->
+    <div
+      class="flex flex-col m-8 mr-4 bg-white shadow-md overflow-y-scroll"
+      style="height: calc(100vh - 4rem)"
+    >
+      <table class="min-w-full divide-y divide-gray-200">
+        <thead class="bg-gray-50">
+          <tr>
+            <th
+              class="px-4 py-3 text-left text-xs font-medium text-gray-500 tracking-wider max-w-[8rem] w-[8rem]"
+              style="max-width: 8rem; width: 8rem"
+            >
+              Activity
+            </th>
+            <th
+              class="px-4 py-3 text-left text-xs font-medium text-gray-500 tracking-wider max-w-[6rem] w-[6rem]"
+              style="max-width: 6rem; width: 6rem"
+            >
+              Description
+            </th>
+            <th
+              class="px-6 py-3 text-left text-xs font-medium text-gray-500 tracking-wider"
+            >
+              Date
+            </th>
+            <th
+              class="px-6 py-3 text-left text-xs font-medium text-gray-500 tracking-wider"
+            >
+              Hours
+            </th>
+            <th class="px-6 py-3"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Example row, replace with dynamic content as needed -->
+          <tr>
+            <td
+              class="px-4 py-4 whitespace-nowrap max-w-[8rem] w-[8rem] truncate"
+            >
+              Tutorihjgjhgjhgjhgdfkgjhdsgkjsdfhgskdfjghkdfjghng
+            </td>
+            <td class="px-4 py-4 whitespace-nowrap max-w-xs w-xs truncate">
+              Helping students with math
+              skdijfghsdfgkjsHDfiusdgfhysdiguhsdfgfidguhdfgiuh
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">2025-08-17</td>
+            <td class="px-6 py-4 whitespace-nowrap">2</td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <button
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded"
+              >
+                Edit
+              </button>
+            </td>
+          </tr>
+          <!-- Example row, replace with dynamic content as needed -->
+          <tr>
+            <td
+              class="px-4 py-4 whitespace-nowrap max-w-[8rem] w-[8rem] truncate"
+            >
+              Tutorihjgjhgjhgjhgdfkgjhdsgkjsdfhgskdfjghkdfjghng
+            </td>
+            <td class="px-4 py-4 whitespace-nowrap max-w-xs w-xs truncate">
+              Helping students with math
+              skdijfghsdfgkjsHDfiusdgfhysdiguhsdfgfidguhdfgiuh
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">2025-08-17</td>
+            <td class="px-6 py-4 whitespace-nowrap">2</td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <button
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded"
+              >
+                Edit
+              </button>
+            </td>
+          </tr>
+          <!-- Example row, replace with dynamic content as needed -->
+          <tr>
+            <td
+              class="px-4 py-4 whitespace-nowrap max-w-[8rem] w-[8rem] truncate"
+            >
+              Tutorihjgjhgjhgjhgdfkgjhdsgkjsdfhgskdfjghkdfjghng
+            </td>
+            <td class="px-4 py-4 whitespace-nowrap max-w-xs w-xs truncate">
+              Helping students with math
+              skdijfghsdfgkjsHDfiusdgfhysdiguhsdfgfidguhdfgiuh
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">2025-08-17</td>
+            <td class="px-6 py-4 whitespace-nowrap">2</td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <button
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded"
+              >
+                Edit
+              </button>
+            </td>
+          </tr>
+          <!-- Example row, replace with dynamic content as needed -->
+          <tr>
+            <td
+              class="px-4 py-4 whitespace-nowrap max-w-[8rem] w-[8rem] truncate"
+            >
+              Tutorihjgjhgjhgjhgdfkgjhdsgkjsdfhgskdfjghkdfjghng
+            </td>
+            <td class="px-4 py-4 whitespace-nowrap max-w-xs w-xs truncate">
+              Helping students with math
+              skdijfghsdfgkjsHDfiusdgfhysdiguhsdfgfidguhdfgiuh
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">2025-08-17</td>
+            <td class="px-6 py-4 whitespace-nowrap">2</td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <button
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded"
+              >
+                Edit
+              </button>
+            </td>
+          </tr>
+          <!-- Example row, replace with dynamic content as needed -->
+          <tr>
+            <td
+              class="px-4 py-4 whitespace-nowrap max-w-[8rem] w-[8rem] truncate"
+            >
+              Tutorihjgjhgjhgjhgdfkgjhdsgkjsdfhgskdfjghkdfjghng
+            </td>
+            <td class="px-4 py-4 whitespace-nowrap max-w-xs w-xs truncate">
+              Helping students with math
+              skdijfghsdfgkjsHDfiusdgfhysdiguhsdfgfidguhdfgiuh
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">2025-08-17</td>
+            <td class="px-6 py-4 whitespace-nowrap">2</td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <button
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded"
+              >
+                Edit
+              </button>
+            </td>
+          </tr>
+          <!-- Example row, replace with dynamic content as needed -->
+          <tr>
+            <td
+              class="px-4 py-4 whitespace-nowrap max-w-[8rem] w-[8rem] truncate"
+            >
+              Tutorihjgjhgjhgjhgdfkgjhdsgkjsdfhgskdfjghkdfjghng
+            </td>
+            <td class="px-4 py-4 whitespace-nowrap max-w-xs w-xs truncate">
+              Helping students with math
+              skdijfghsdfgkjsHDfiusdgfhysdiguhsdfgfidguhdfgiuh
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">2025-08-17</td>
+            <td class="px-6 py-4 whitespace-nowrap">2</td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <button
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded"
+              >
+                Edit
+              </button>
+            </td>
+          </tr>
+          <!-- Example row, replace with dynamic content as needed -->
+          <tr>
+            <td
+              class="px-4 py-4 whitespace-nowrap max-w-[8rem] w-[8rem] truncate"
+            >
+              Tutorihjgjhgjhgjhgdfkgjhdsgkjsdfhgskdfjghkdfjghng
+            </td>
+            <td class="px-4 py-4 whitespace-nowrap max-w-xs w-xs truncate">
+              Helping students with math
+              skdijfghsdfgkjsHDfiusdgfhysdiguhsdfgfidguhdfgiuh
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">2025-08-17</td>
+            <td class="px-6 py-4 whitespace-nowrap">2</td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <button
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded"
+              >
+                Edit
+              </button>
+            </td>
+          </tr>
+          <!-- Example row, replace with dynamic content as needed -->
+          <tr>
+            <td
+              class="px-4 py-4 whitespace-nowrap max-w-[8rem] w-[8rem] truncate"
+            >
+              Tutorihjgjhgjhgjhgdfkgjhdsgkjsdfhgskdfjghkdfjghng
+            </td>
+            <td class="px-4 py-4 whitespace-nowrap max-w-xs w-xs truncate">
+              Helping students with math
+              skdijfghsdfgkjsHDfiusdgfhysdiguhsdfgfidguhdfgiuh
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">2025-08-17</td>
+            <td class="px-6 py-4 whitespace-nowrap">2</td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <button
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded"
+              >
+                Edit
+              </button>
+            </td>
+          </tr>
+          <!-- Example row, replace with dynamic content as needed -->
+          <tr>
+            <td
+              class="px-4 py-4 whitespace-nowrap max-w-[8rem] w-[8rem] truncate"
+            >
+              Tutorihjgjhgjhgjhgdfkgjhdsgkjsdfhgskdfjghkdfjghng
+            </td>
+            <td class="px-4 py-4 whitespace-nowrap max-w-xs w-xs truncate">
+              Helping students with math
+              skdijfghsdfgkjsHDfiusdgfhysdiguhsdfgfidguhdfgiuh
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">2025-08-17</td>
+            <td class="px-6 py-4 whitespace-nowrap">2</td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <button
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded"
+              >
+                Edit
+              </button>
+            </td>
+          </tr>
+          <!-- Example row, replace with dynamic content as needed -->
+          <tr>
+            <td
+              class="px-4 py-4 whitespace-nowrap max-w-[8rem] w-[8rem] truncate"
+            >
+              Tutorihjgjhgjhgjhgdfkgjhdsgkjsdfhgskdfjghkdfjghng
+            </td>
+            <td class="px-4 py-4 whitespace-nowrap max-w-xs w-xs truncate">
+              Helping students with math
+              skdijfghsdfgkjsHDfiusdgfhysdiguhsdfgfidguhdfgiuh
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">2025-08-17</td>
+            <td class="px-6 py-4 whitespace-nowrap">2</td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <button
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded"
+              >
+                Edit
+              </button>
+            </td>
+          </tr>
+          <!-- Example row, replace with dynamic content as needed -->
+          <tr>
+            <td
+              class="px-4 py-4 whitespace-nowrap max-w-[8rem] w-[8rem] truncate"
+            >
+              Tutorihjgjhgjhgjhgdfkgjhdsgkjsdfhgskdfjghkdfjghng
+            </td>
+            <td class="px-4 py-4 whitespace-nowrap max-w-xs w-xs truncate">
+              Helping students with math
+              skdijfghsdfgkjsHDfiusdgfhysdiguhsdfgfidguhdfgiuh
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">2025-08-17</td>
+            <td class="px-6 py-4 whitespace-nowrap">2</td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <button
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded"
+              >
+                Edit
+              </button>
+            </td>
+          </tr>
+          <!-- Example row, replace with dynamic content as needed -->
+          <tr>
+            <td
+              class="px-4 py-4 whitespace-nowrap max-w-[8rem] w-[8rem] truncate"
+            >
+              Tutorihjgjhgjhgjhgdfkgjhdsgkjsdfhgskdfjghkdfjghng
+            </td>
+            <td class="px-4 py-4 whitespace-nowrap max-w-xs w-xs truncate">
+              Helping students with math
+              skdijfghsdfgkjsHDfiusdgfhysdiguhsdfgfidguhdfgiuh
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">2025-08-17</td>
+            <td class="px-6 py-4 whitespace-nowrap">2</td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <button
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded"
+              >
+                Edit
+              </button>
+            </td>
+          </tr>
+          <!-- Example row, replace with dynamic content as needed -->
+          <tr>
+            <td
+              class="px-4 py-4 whitespace-nowrap max-w-[8rem] w-[8rem] truncate"
+            >
+              Tutorihjgjhgjhgjhgdfkgjhdsgkjsdfhgskdfjghkdfjghng
+            </td>
+            <td class="px-4 py-4 whitespace-nowrap max-w-xs w-xs truncate">
+              Helping students with math
+              skdijfghsdfgkjsHDfiusdgfhysdiguhsdfgfidguhdfgiuh
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">2025-08-17</td>
+            <td class="px-6 py-4 whitespace-nowrap">2</td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <button
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded"
+              >
+                Edit
+              </button>
+            </td>
+          </tr>
+          <!-- Example row, replace with dynamic content as needed -->
+          <tr>
+            <td
+              class="px-4 py-4 whitespace-nowrap max-w-[8rem] w-[8rem] truncate"
+            >
+              Tutorihjgjhgjhgjhgdfkgjhdsgkjsdfhgskdfjghkdfjghng
+            </td>
+            <td class="px-4 py-4 whitespace-nowrap max-w-xs w-xs truncate">
+              Helping students with math
+              skdijfghsdfgkjsHDfiusdgfhysdiguhsdfgfidguhdfgiuh
+            </td>
+            <td class="px-6 py-4 whitespace-nowrap">2025-08-17</td>
+            <td class="px-6 py-4 whitespace-nowrap">2</td>
+            <td class="px-6 py-4 whitespace-nowrap">
+              <button
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded"
+              >
+                Edit
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="flex flex-col gap-8 p-8 pl-4">
+      <!-- new entry -->
+      <div class="bg-white shadow-md">
+        <form class="flex flex-col p-6">
+          <div class="flex flex-row gap-4 mb-4">
+            <div class="flex flex-col flex-1">
+              <label class="mb-2 font-semibold text-gray-700" for="activityName"
+                >Activity Name</label
+              >
+              <input
+                class="p-2 border border-gray-300 rounded w-full"
+                type="text"
+                id="activityName"
+                name="activityName"
+                required
+              />
+            </div>
+            <div class="flex flex-col">
+              <label
+                class="mb-2 font-semibold text-gray-700"
+                for="startDateTime"
+                >Start Date & Time</label
+              >
+              <input
+                class="p-2 border border-gray-300 rounded"
+                type="datetime-local"
+                id="startDateTime"
+                name="startDateTime"
+                required
+              />
+            </div>
+            <div class="flex flex-col">
+              <label class="mb-2 font-semibold text-gray-700" for="endDateTime"
+                >End Date & Time</label
+              >
+              <input
+                class="p-2 border border-gray-300 rounded"
+                type="datetime-local"
+                id="endDateTime"
+                name="endDateTime"
+                required
+              />
+            </div>
+          </div>
+
+          <label
+            class="mb-2 font-semibold text-gray-700"
+            for="activityDescription"
+            >Activity Description</label
+          >
+          <textarea
+            class="mb-4 p-2 border border-gray-300 rounded"
+            id="activityDescription"
+            name="activityDescription"
+            rows="3"
+            required
+          ></textarea>
+
+          <button
+            type="submit"
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-2"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+      <!-- summary / progress -->
+      <div
+        id="summaryPanel"
+        class="bg-white w-full rounded shadow-md p-6 text-gray-900 flex flex-col gap-4"
+        data-member-icon="./img/1.-Member-Badge.png"
+        data-bronze-icon="./img/2.-Bronze-Badge.png"
+        data-silver-icon="./img/3.-Silver-Badge.png"
+        data-gold-icon="./img/4.-Gold-Badge.png"
+      >
+        <div class="flex items-baseline justify-between">
+          <h2 class="text-base font-semibold">Hours Summary</h2>
+        </div>
+
+        <div>
+          <div class="flex items-end justify-between mb-2">
+            <div class="flex items-end gap-3">
+              <div id="totalHours" class="text-3xl font-bold leading-none">
+                0
+              </div>
+              <div id="nextMilestone" class="text-xs text-gray-500 mb-1"></div>
+            </div>
+            <div id="goalHours" class="text-3xl font-bold leading-none">
+              500
+            </div>
+          </div>
+          <div class="relative h-2 rounded-full bg-gray-200 overflow-hidden">
+            <div
+              id="progressFill"
+              class="absolute left-0 top-0 h-full bg-blue-500 transition-[width] duration-500"
+              style="width: 0%"
+            ></div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-sm font-semibold mb-2">Achievements</h3>
+          <ul id="achievementsList" class="grid grid-cols-2 gap-4"></ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    (function () {
+      const MAX_GOAL = 500;
+      const thresholds = [
+        { key: "member", label: "Member", hours: 5 },
+        { key: "bronze", label: "Bronze", hours: 32 },
+        { key: "silver", label: "Silver", hours: 250 },
+        { key: "gold", label: "Gold", hours: 500 },
+      ];
+
+      const tbody = document.querySelector("tbody");
+      const totalEl = document.getElementById("totalHours");
+      const nextMilestoneEl = document.getElementById("nextMilestone");
+      const goalEl = document.getElementById("goalHours");
+      const progressFill = document.getElementById("progressFill");
+      const listEl = document.getElementById("achievementsList");
+      const panel = document.getElementById("summaryPanel");
+
+      function computeTotal() {
+        let sum = 0;
+        if (!tbody) return 0;
+        const rows = tbody.querySelectorAll("tr");
+        rows.forEach((row) => {
+          const cells = row.querySelectorAll("td");
+          if (cells.length >= 4) {
+            const val = parseFloat((cells[3].textContent || "").trim());
+            if (!Number.isNaN(val)) sum += val;
+          }
+        });
+        return sum;
+      }
+
+      function formatHours(h) {
+        return h % 1 === 0 ? h.toString() : h.toFixed(2);
+      }
+
+      function getIconPath(key) {
+        const attr = panel?.getAttribute(`data-${key}-icon`);
+        return attr && attr.trim().length ? attr : "";
+      }
+
+      function renderAchievements(total) {
+        listEl.innerHTML = "";
+        thresholds.forEach((t) => {
+          const achieved = total >= t.hours;
+          const li = document.createElement("li");
+          li.className = achieved
+            ? "flex items-center gap-3 p-2 rounded border border-emerald-300"
+            : "flex items-center gap-3 p-2 rounded border border-gray-200 opacity-70";
+
+          const iconWrap = document.createElement("div");
+          iconWrap.className =
+            "relative w-8 h-8 rounded-full flex items-center justify-center bg-gray-100 ring-1 ring-gray-200 overflow-hidden";
+
+          const img = document.createElement("img");
+          img.alt = t.label + " icon";
+          img.className = "w-full h-full object-contain object-center";
+          const iconSrc = getIconPath(t.key);
+          if (iconSrc) {
+            img.src = iconSrc;
+            img.onerror = () => (img.style.display = "none");
+          }
+          iconWrap.appendChild(img);
+
+          const textWrap = document.createElement("div");
+          const title = document.createElement("div");
+          title.className = "font-medium";
+          title.textContent = t.label;
+          const sub = document.createElement("div");
+          sub.className = "text-xs text-gray-500";
+          sub.textContent = `${t.hours} hours`;
+          textWrap.appendChild(title);
+          textWrap.appendChild(sub);
+
+          li.appendChild(iconWrap);
+          li.appendChild(textWrap);
+          if (!achieved) {
+            const status = document.createElement("div");
+            status.className = "ml-auto text-xs text-gray-600";
+            status.textContent = `${Math.max(0, t.hours - total)}h to go`;
+            li.appendChild(status);
+          }
+          listEl.appendChild(li);
+        });
+      }
+
+      function update() {
+        const total = computeTotal();
+        totalEl.textContent = formatHours(total);
+        if (goalEl) goalEl.textContent = formatHours(MAX_GOAL);
+
+        const pct = Math.min(100, (Math.min(total, MAX_GOAL) / MAX_GOAL) * 100);
+        progressFill.style.width = pct + "%";
+
+        const next = thresholds.find((t) => total < t.hours);
+        if (next) {
+          const remain = Math.max(0, next.hours - total);
+          nextMilestoneEl.textContent = `${formatHours(remain)} hour${
+            remain === 1 ? "" : "s"
+          } to ${next.label}`;
+        } else {
+          nextMilestoneEl.textContent = "All achievements reached";
+        }
+
+        renderAchievements(total);
+      }
+
+      update();
+
+      // Auto-update when the table changes
+      if (tbody) {
+        const mo = new MutationObserver(() => update());
+        mo.observe(tbody, {
+          childList: true,
+          subtree: true,
+          characterData: true,
+        });
+      }
+    })();
+  </script>
 </html>
