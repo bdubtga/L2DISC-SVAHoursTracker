@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portal</title>
+    <script src="./js/tailwind.js"></script>
+  </head>
+  <body class="bg-gray-100 min-h-screen">
+    <nav class="bg-white w-full fixed top-0 left-0 shadow-md">
+      <div class="container mx-auto flex justify-between items-center p-4">
+        <div id="tabBar" class="flex space-x-4">
+          <button
+            class="px-3 py-2 text-blue-500 font-semibold border-b-2 border-transparent focus:outline-none"
+            url="./hours.html"
+          >
+            Hours
+          </button>
+          <button
+            class="px-3 py-2 text-gray-600 hover:text-blue-500 border-b-2 border-transparent focus:outline-none"
+            url="./settings.html"
+          >
+            Settings
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- Main content -->
+    <main class="pt-16">
+      <iframe
+        id="contentFrame"
+        title="Portal Content"
+        class="w-full"
+        style="height: calc(100vh - 4rem); border: none"
+        src="./404.html"
+      ></iframe>
+    </main>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const buttons = document.querySelectorAll("#tabBar button");
+        const iframe = document.getElementById("contentFrame");
+
+        buttons.forEach((button) => {
+          button.addEventListener("click", () => {
+            // Update styles for all buttons to inactive state
+            buttons.forEach((btn) => {
+              btn.classList.remove(
+                "text-blue-500",
+                "font-semibold",
+                "border-blue-500"
+              );
+              btn.classList.add("text-gray-600", "border-transparent");
+            });
+            // Set the clicked button to active state
+            button.classList.add(
+              "text-blue-500",
+              "font-semibold",
+              "border-blue-500"
+            );
+            button.classList.remove("text-gray-600", "border-transparent");
+
+            // Load the URL from the button into the iframe
+            const url = button.getAttribute("url");
+            if (url) {
+              iframe.src = url;
+            }
+          });
+        });
+
+        // Load hours by default by simulating a click on the Hours button
+        const defaultButton = Array.from(buttons).find(
+          (btn) => btn.getAttribute("url") === "./hours.html"
+        );
+        if (defaultButton) {
+          defaultButton.click();
+        }
+      });
+    </script>
+  </body>
+</html>
