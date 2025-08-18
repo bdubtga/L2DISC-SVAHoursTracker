@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/templates/login.html">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/templates/login.html" />
+              <option name="originalContent" value="&lt;!DOCTYPE html&gt;&#10;&lt;html lang=&quot;en&quot;&gt;&#10;&lt;head&gt;&#10;    &lt;meta charset=&quot;UTF-8&quot;&gt;&#10;    &lt;title&gt;Login&lt;/title&gt;&#10;    &lt;script src=&quot;./css/tailwind.js&quot;&gt;&lt;/script&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;    &lt;p&gt;Hellkjkdfgjhkjhs&lt;/p&gt;&#10;&lt;/body&gt;&#10;&lt;/html&gt;" />
+              <option name="updatedContent" value="&lt;!DOCTYPE html&gt;&#10;&lt;html lang=&quot;en&quot;&gt;&#10;&lt;head&gt;&#10;    &lt;meta charset=&quot;UTF-8&quot;&gt;&#10;    &lt;title&gt;Login&lt;/title&gt;&#10;    &lt;script src=&quot;./css/tailwind.js&quot;&gt;&lt;/script&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;    &lt;div class=&quot;flex items-center justify-center min-h-screen bg-gray-100&quot;&gt;&#10;        &lt;form class=&quot;bg-white p-8 rounded shadow-md w-80&quot; method=&quot;post&quot; action=&quot;/login&quot;&gt;&#10;            &lt;h2 class=&quot;text-2xl font-bold mb-6 text-center&quot;&gt;Login&lt;/h2&gt;&#10;            &lt;div class=&quot;mb-4&quot;&gt;&#10;                &lt;label class=&quot;block text-gray-700 mb-2&quot; for=&quot;username&quot;&gt;Username&lt;/label&gt;&#10;                &lt;input class=&quot;w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300&quot; type=&quot;text&quot; id=&quot;username&quot; name=&quot;username&quot; required&gt;&#10;            &lt;/div&gt;&#10;            &lt;div class=&quot;mb-6&quot;&gt;&#10;                &lt;label class=&quot;block text-gray-700 mb-2&quot; for=&quot;password&quot;&gt;Password&lt;/label&gt;&#10;                &lt;input class=&quot;w-full px-3 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300&quot; type=&quot;password&quot; id=&quot;password&quot; name=&quot;password&quot; required&gt;&#10;            &lt;/div&gt;&#10;            &lt;button class=&quot;w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition-colors&quot; type=&quot;submit&quot;&gt;Login&lt;/button&gt;&#10;        &lt;/form&gt;&#10;    &lt;/div&gt;&#10;&lt;/body&gt;&#10;&lt;/html&gt;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
