@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./js/tailwind.js"></script>
+  </head>
+  <body class="p-64 bg-ping-500">
+    <!-- new entry -->
+    <div class="bg-white shadow-md">
+      <form class="flex flex-col p-6">
+        <div class="flex flex-row gap-4 mb-4">
+          <div class="flex flex-col flex-1">
+            <label class="mb-2 font-semibold text-gray-700" for="activityName"
+              >Activity Name</label
+            >
+            <input
+              class="p-2 border border-gray-300 rounded w-full"
+              type="text"
+              id="activityName"
+              name="activityName"
+              required
+            />
+          </div>
+          <div class="flex flex-col">
+            <label class="mb-2 font-semibold text-gray-700" for="startDateTime"
+              >Start Date & Time</label
+            >
+            <input
+              class="p-2 border border-gray-300 rounded"
+              type="datetime-local"
+              id="startDateTime"
+              name="startDateTime"
+              required
+            />
+          </div>
+          <div class="flex flex-col">
+            <label class="mb-2 font-semibold text-gray-700" for="endDateTime"
+              >End Date & Time</label
+            >
+            <input
+              class="p-2 border border-gray-300 rounded"
+              type="datetime-local"
+              id="endDateTime"
+              name="endDateTime"
+              required
+            />
+          </div>
+        </div>
+
+        <label
+          class="mb-2 font-semibold text-gray-700"
+          for="activityDescription"
+          >Activity Description</label
+        >
+        <textarea
+          class="mb-4 p-2 border border-gray-300 rounded"
+          id="activityDescription"
+          name="activityDescription"
+          rows="3"
+          required
+        ></textarea>
+
+        <div class="flex gap-4 w-full">
+          <button
+            onclick="window.location.href='./hours.html'"
+            class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded mt-2 w-full"
+          >
+            Cancel
+          </button>
+          <button
+            type="submit"
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-2 w-full"
+          >
+            Save
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -57,6 +57,7 @@
             <td class="px-6 py-4 whitespace-nowrap">
               <button
                 class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded"
+                onclick="edit('somehting')"
               >
                 Edit
               </button>
@@ -437,7 +438,6 @@
             ></div>
           </div>
         </div>
-
         <div>
           <h3 class="text-sm font-semibold mb-2">Achievements</h3>
           <ul id="achievementsList" class="grid grid-cols-2 gap-4"></ul>
@@ -445,6 +445,11 @@
       </div>
     </div>
   </body>
+  <script>
+    function edit(id) {
+      window.location.href = `./edit.html?id=${id}`;
+    }
+  </script>
   <script>
     (function () {
       const MAX_GOAL = 500;
