@@ -12,13 +12,13 @@
         <div id="tabBar" class="flex space-x-4">
           <button
             class="px-3 py-2 text-blue-500 font-semibold border-b-2 border-transparent focus:outline-none"
-            url="./hours.html"
+            url="./hours"
           >
             Hours
           </button>
           <button
             class="px-3 py-2 text-gray-600 hover:text-blue-500 border-b-2 border-transparent focus:outline-none"
-            url="./settings.html"
+            url="./settings"
           >
             Settings
           </button>
@@ -32,7 +32,7 @@
         title="Portal Content"
         class="w-full"
         style="height: calc(100vh - 4rem); border: none"
-        src="./404.html"
+        src="./404"
       ></iframe>
     </main>
 
@@ -70,7 +70,7 @@
 
         // Load hours by default by simulating a click on the Hours button
         const defaultButton = Array.from(buttons).find(
-          (btn) => btn.getAttribute("url") === "./hours.html"
+          (btn) => btn.getAttribute("url") === "./hours"
         );
         if (defaultButton) {
           defaultButton.click();
