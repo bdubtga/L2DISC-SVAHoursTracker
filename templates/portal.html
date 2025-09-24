@@ -3,9 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>SVA - Portal</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body>
-    <p>Test</p>
+  <body class="bg-gray-100 min-h-screen">
+    <nav class="bg-white w-full fixed top-0 left-0 shadow-md">
+      <div class="container mx-auto flex justify-between items-center p-4">
+        <div id="tabBar" class="flex space-x-4">
+          <button
+            class="px-3 py-2 border-b-2 focus:outline-none hover:text-blue-500 active"
+            onclick="switchTab('hours')"
+          >
+            Hours
+          </button>
+          <button
+            class="px-3 py-2 border-b-2 focus:outline-none hover:text-blue-500 inactive"
+            onclick="switchTab('recordofachievement')"
+          >
+            Record of Achievement
+          </button>
+          <button
+            class="px-3 py-2 border-b-2 focus:outline-none hover:text-blue-500 inactive"
+            onclick="switchTab('settings')"
+          >
+            Settings
+          </button>
+        </div>
+      </div>
+    </nav>
+    <main class="pt-16">
+      <iframe
+        id="contentFrame"
+        class="w-full"
+        style="height: calc(100vh - 4rem); border: none"
+        src="./hours"
+      ></iframe>
+    </main>
+
+    <style>
+      .active {
+        color: #3b82f6; /* blue-500 */
+        font-weight: 600; /* font-semibold */
+        border-bottom-color: #3b82f6; /* border-blue-500 */
+      }
+      .inactive {
+        color: #4b5563; /* gray-600 */
+        border-bottom-color: transparent;
+      }
+    </style>
+
+    <script>
+      function switchTab(url) {
+        // get buttons
+        const buttons = document
+          .getElementById("tabBar")
+          .getElementsByTagName("button");
+        // set all buttons to inactive
+        for (let i = 0; i < buttons.length; i++) {
+          buttons[i].classList.remove("active");
+          buttons[i].classList.add("inactive");
+        }
+        // set clicked button to active
+        event.target.classList.remove("inactive");
+        event.target.classList.add("active");
+        // update iframe url
+        document.getElementById("contentFrame").src = `./${url}`;
+      }
+    </script>
   </body>
 </html>
