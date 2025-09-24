@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVA - Record Of Achievement</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  </head>
+  <body class="bg-gray-100 grid grid-cols-3 p-8 gap-8">
+    <!-- total hours -->
+    <div class="bg-white shadow-md p-6">
+      <h2>All time</h2>
+      <p class="text-6xl font-bold text-blue-600">338</p>
+    </div>
+    <!-- year breakdown -->
+    <div class="bg-white shadow-md p-6">
+      <h2 class="text-xl font-semibold mb-4">Year Breakdown</h2>
+      <ul class="divide-y divide-gray-200">
+        <li class="py-2 flex justify-between">
+          <span>2023</span>
+          <span class="text-blue-600 font-bold">120 hours</span>
+        </li>
+        <li class="py-2 flex justify-between">
+          <span>2022</span>
+          <span class="text-blue-600 font-bold">100 hours</span>
+        </li>
+        <li class="py-2 flex justify-between">
+          <span>2021</span>
+          <span class="text-blue-600 font-bold">80 hours</span>
+        </li>
+      </ul>
+    </div>
+    <!-- print / download pdf -->
+    <div class="bg-white shadow-md grid grid-cols-2">
+      <button
+        class="bg-blue-600 text-white hover:bg-blue-700 w-full flex items-center justify-center gap-2"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1M7 10l5 5m0 0l5-5m-5 5V4"
+          />
+        </svg>
+        Download PDF
+      </button>
+      <button
+        class="bg-gray-600 text-white hover:bg-gray-700 w-full flex items-center justify-center gap-2"
+      >
+        Print
+      </button>
+    </div>
+  </body>
+</html>
