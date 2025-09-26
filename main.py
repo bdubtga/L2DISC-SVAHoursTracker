@@ -221,12 +221,13 @@ def settings():
     
     user_id = session['user']
     message = ""
-    
+    error = ""
+
     if request.method == 'POST':
         if 'update_user' in request.form:
             username = request.form['username']
             if cur.execute('SELECT id FROM user WHERE username = ? AND id != ?', (username, user_id)).fetchone():
-                message = "username already exists"
+                error = "username already exists"
             else:
                 cur.execute('UPDATE user SET username = ? WHERE id = ?', (username, user_id))
                 con.commit()
@@ -239,6 +240,10 @@ def settings():
             message = "school updated"
         
         elif 'change_password' in request.form:
+            current_password = request.form['current_password']
+            user_record = cur.execute('SELECT password FROM user WHERE id = ?', (user_id,)).fetchone()
+            if user_record is None or current_password != user_record[0]:
+                return render_template('settings.html', error="Current password is incorrect")
             if request.form['new_password'] != request.form['confirm_password']:
                 return render_template('settings.html', error="Passwords do not match")
             new_password = request.form['new_password']
@@ -256,7 +261,8 @@ def settings():
                          user=user, 
                          schools=schools, 
                          current_school=current_school,
-                         message=message)
+                         message=message,
+                         error=error)
 
 if __name__ == '__main__':
     app.run(port=3000, debug=True)
