@@ -225,15 +225,18 @@ def settings():
     if request.method == 'POST':
         if 'update_user' in request.form:
             username = request.form['username']
-            cur.execute('UPDATE user SET username = ? WHERE id = ?', (username, user_id))
-            con.commit()
-            message = "Username updated!"
+            if cur.execute('SELECT id FROM user WHERE username = ? AND id != ?', (username, user_id)).fetchone():
+                message = "username already exists"
+            else:
+                cur.execute('UPDATE user SET username = ? WHERE id = ?', (username, user_id))
+                con.commit()
+                message = "username updated"
         
         elif 'update_school' in request.form:
             school_id = request.form['school_id'] or None
             cur.execute('UPDATE user SET school_id = ? WHERE id = ?', (school_id, user_id))
             con.commit()
-            message = "School updated!"
+            message = "school updated"
         
         elif 'change_password' in request.form:
             if request.form['new_password'] != request.form['confirm_password']:
@@ -241,7 +244,7 @@ def settings():
             new_password = request.form['new_password']
             cur.execute('UPDATE user SET password = ? WHERE id = ?', (new_password, user_id))
             con.commit()
-            message = "Password changed!"
+            message = "password changed"
     
     user = cur.execute('SELECT * FROM user WHERE id = ?', (user_id,)).fetchone()
     schools = cur.execute('SELECT * FROM school ORDER BY school').fetchall()
